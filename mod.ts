@@ -10,7 +10,7 @@ export const ALPACA_BASE_URL_DATA = "https://data.alpaca.markets/v2"
  * @param body The body of the request
  * @returns a promise with the response from the alpaca api
  */
-export const sendAlpacaRequest = async (url: string, method: string, body: any) => {
+export const sendAlpacaRequest = async (url: string, method: string, body: any): Promise<Response> => {
     return await fetch(url, {
         method: method,
         body: body,
