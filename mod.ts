@@ -21,3 +21,6 @@ export const sendAlpacaRequest = async (url: string, method: string, body: any):
         }
     })
 }
+
+
+export type * as Types from './types/MarketTypes.ts';
